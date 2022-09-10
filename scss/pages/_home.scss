@@ -2,9 +2,15 @@
     background: url(../images/home/bgs1-desktop.png) no-repeat center;
     background-size: cover;
     padding: 54px 0 94px;
-    &-inner{
-        .row{
+    &-inner {
+        max-width: 1000px;
+        margin: auto;
+        .row {
             align-items: center;
+            margin: 0;
+        }
+        .col {
+            padding: 0;
         }
     }
     .card {
@@ -38,19 +44,167 @@
         font-size: 24px;
         line-height: 100%;
     }
-    .slogan{
+    .slogan {
         margin-top: -18px;
-        picture{
+        picture {
             max-width: 431px;
             margin: auto;
         }
     }
-    .rs-col{
-        &-left{
-
+    .rs-col {
+        &-left {
+            flex-basis: calc(100% - 432px);
+            max-width: calc(100% - 432px);
+            width: 100%;
+            margin-right: 98px;
         }
-        &-right{
+        &-right {
+            flex: 1;
+        }
+    }
+}
 
+.section2 {
+    background: #fff6ef;
+    position: relative;
+    padding-bottom: 24px;
+    &:before {
+        content: "";
+        background: #fff;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding-top: 134px;
+    }
+    .row {
+        margin: 0;
+        align-items: center;
+        .col {
+            padding: 0;
+        }
+    }
+    .card {
+        &-content {
+            text-align: center;
+            > * {
+                margin-bottom: 16px;
+            }
+            .desc {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: #212529;
+
+                max-width: 524px;
+            }
+        }
+        .title {
+            max-width: 294px;
+            margin: auto auto 16px;
+        }
+    }
+    .btn-view {
+        background: #e5bd89;
+        border-radius: 24px;
+        color: #212529;
+
+        width: 150px;
+        height: 40px;
+        span {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
+        }
+    }
+    .rs-col {
+        &-right {
+            max-width: calc(100% - 620px);
+            flex-basis: calc(100% - 620px);
+            width: 100%;
+            margin-left: 120px;
+        }
+        &-left {
+            flex: 1;
+        }
+    }
+}
+.btn {
+    border: none;
+}
+.section3 {
+    background: #ffffff;
+    padding-top: 64px;
+    .section-box {
+        border: 1px solid #0a2c36;
+        border-radius: 24px 24px 0px 0px;
+        padding: 0 36px;
+    }
+    .section-title {
+        text-align: center;
+        .tit {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 100%;
+            color: #e5bd89;
+
+            background: #0a2c36;
+            border-radius: 0px 0px 6px 6px;
+            max-width: 508px;
+            width: 100%;
+            height: 80px;
+            margin: auto;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 48px;
+        }
+    }
+}
+.section4{
+    background: #0A2C36;
+    padding: 72px 0 64px;
+    .section-title{
+        margin-bottom: 48px;
+        .tit{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 100%;
+            color: #E5BD89;
+        }
+    }
+}
+.section-box {
+    .card {
+        &-content {
+            background: #e5bd89;
+            color: #212529;
+            padding: 22px 13px 50px;
+            > *:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+        .tit {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 100%;
+        }
+        .desc {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            max-width: 314.65px;
+            margin: auto auto 16px;
+        }
+        .btn {
+            width: 140px;
+height: 40px;
+            background: #fff6ef;
+            border-radius: 24px;
+            color: #212529;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            padding: 0;
         }
     }
 }
