@@ -1,0 +1,197 @@
+@import '_icon-variables';
+
+@font-face {
+	font-family: $font-family;
+	src: url('#{$font-family-path}/Roboto-Regular.eot');
+	src: url('#{$font-family-path}/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-family-path}/Roboto-Regular.woff2') format('woff2'),
+		url('#{$font-family-path}/Roboto-Regular.woff') format('woff'),
+		url('#{$font-family-path}/Roboto-Regular.ttf') format('truetype'),
+		url('#{$font-family-path}/Roboto-Regular.svg#Roboto-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+// @font-face {
+// 	font-family: $font-family;
+// 	src: url('#{$font-family-path}/Roboto-Medium.eot');
+// 	src: url('#{$font-family-path}/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+// 		url('#{$font-family-path}/Roboto-Medium.woff2') format('woff2'),
+// 		url('#{$font-family-path}/Roboto-Medium.woff') format('woff'),
+// 		url('#{$font-family-path}/Roboto-Medium.ttf') format('truetype'),
+// 		url('#{$font-family-path}/Roboto-Medium.svg#Roboto-Medium') format('svg');
+// 	font-weight: 500;
+// 	font-style: normal;
+// 	font-display: swap;
+// }
+
+@font-face {
+	font-family: $font-family;
+	src: url('#{$font-family-path}/Roboto-Bold.eot');
+	src: url('#{$font-family-path}/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$font-family-path}/Roboto-Bold.woff2') format('woff2'),
+		url('#{$font-family-path}/Roboto-Bold.woff') format('woff'),
+		url('#{$font-family-path}/Roboto-Bold.ttf') format('truetype'),
+		url('#{$font-family-path}/Roboto-Bold.svg#Roboto-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+//
+// ../fonts/Font Icon
+//
+@font-face {
+	font-family: '#{$font-icon-family}';
+	src: url('../fonts/#{$font-icon-path}/#{$font-icon-file}.eot?7h9xfl');
+	src: url('../fonts/#{$font-icon-path}/#{$font-icon-file}.eot?7h9xfl#iefix') format('embedded-opentype'),
+		url('../fonts/#{$font-icon-path}/#{$font-icon-file}.ttf?7h9xfl') format('truetype'),
+		url('../fonts/#{$font-icon-path}/#{$font-icon-file}.woff?7h9xfl') format('woff'),
+		url('../fonts/#{$font-icon-path}/#{$font-icon-file}.svg?7h9xfl##{$font-icon-file}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Font.eot');
+    src: url('../fonts/Font.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Font.woff2') format('woff2'),
+        url('../fonts/Font.woff') format('woff'),
+        url('../fonts/Font.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Font_1.eot');
+    src: url('../fonts/Font_1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Font_1.woff2') format('woff2'),
+        url('../fonts/Font_1.woff') format('woff'),
+        url('../fonts/Font_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Font_2.eot');
+    src: url('../fonts/Font_2.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Font_2.woff2') format('woff2'),
+        url('../fonts/Font_2.woff') format('woff'),
+        url('../fonts/Font_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Font_3.eot');
+    src: url('../fonts/Font_3.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Font_3.woff2') format('woff2'),
+        url('../fonts/Font_3.woff') format('woff'),
+        url('../fonts/Font_3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Font_4.eot');
+    src: url('../fonts/Font_4.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Font_4.woff2') format('woff2'),
+        url('../fonts/Font_4.woff') format('woff'),
+        url('../fonts/Font_4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham2';
+    src: url('../fonts/goham/Gotham-Thin.eot');
+    src: url('../fonts/goham/Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/goham/Gotham-Thin.woff2') format('woff2'),
+        url('../fonts/goham/Gotham-Thin.woff') format('woff'),
+        url('../fonts/goham/Gotham-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham2';
+    src: url('../fonts/goham/Gotham-XLight.eot');
+    src: url('../fonts/goham/Gotham-XLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/goham/Gotham-XLight.woff2') format('woff2'),
+        url('../fonts/goham/Gotham-XLight.woff') format('woff'),
+        url('../fonts/goham/Gotham-XLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham2';
+    src: url('../fonts/goham/Gotham-Light.eot');
+    src: url('../fonts/goham/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/goham/Gotham-Light.woff2') format('woff2'),
+        url('../fonts/goham/Gotham-Light.woff') format('woff'),
+        url('../fonts/goham/Gotham-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham2';
+    src: url('../fonts/goham/Gotham-Bold.eot');
+    src: url('../fonts/goham/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/goham/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/goham/Gotham-Bold.woff') format('woff'),
+        url('../fonts/goham/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+[class^='ic-'],
+[class*=' ic-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: '#{$font-icon-family}' !important;
+	// speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better ../fonts/Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	&:before{
+		font-family: '#{$font-icon-family}' !important;
+	}
+}
+
+
+@each $keys, $content in $icons{
+	// @debug $content;
+	.ic-#{$keys}{
+		&:before{
+			content: '#{$content}';
+		}
+	}
+}
+
+$icon-path-color: $gray !default;
+$icon-path2-color: $white !default;
