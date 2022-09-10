@@ -59,3 +59,13 @@ const product = (params) => {
     }
 }
 product();
+
+const branch = (params) => {
+    if($('.slide-partner').length){
+        var swiper = new Swiper(".slide-partner", {
+            slidesPerView: 2.5,
+            spaceBetween: 32,
+          });
+    }
+}
+branch();

@@ -1,0 +1,44 @@
+.section__contact {
+    padding: 64px 0 87px;
+    .tit {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 53px;
+        color: #0a2c36;
+    }
+    .desc{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: #212529;
+    }
+    .line{
+        border: 1px solid #0A2C36;
+        width: 100%;
+    }
+    .box-info{
+        > * {
+            margin-bottom: 16px;
+        }
+    }
+    .list{
+        padding-top: 16px;
+        .content{
+            color: #0A2C36;
+        }
+    }
+    .rs-row{
+        margin: 0;
+        .col{
+            padding: 0;
+        }
+    }
+    .col-right{
+        max-width: calc(100% - 478px);
+        width: 100%;
+        margin-left: 48px;
+    }
+    .col-left{
+        flex: 1;
+    }
+}
