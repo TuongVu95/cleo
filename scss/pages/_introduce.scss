@@ -3,22 +3,7 @@
         background: url(../images/introduce/bg-banner.png) no-repeat center center;
         background-size: 100% 100%;
         padding-top: 84px;
-        .swiper-pagination {
-            bottom: 24px;
-            &-bullet {
-                width: 24px;
-                height: 24px;
-                opacity: 1;
-                background: #ffffff;
-                &-active {
-                    background: #0a2c36;
-                    border: 1px solid #e09826;
-                }
-                &:not(:last-child) {
-                    margin-right: 32px;
-                }
-            }
-        }
+
     }
     .section__member {
         padding: 64px 0 111px;
@@ -92,6 +77,25 @@
             margin-left: 62px;
             .col-6{
                 margin-bottom: 32px;
+            }
+        }
+    }
+}
+.swiper{
+    .swiper-pagination {
+        bottom: 24px;
+        &-bullet {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            opacity: 1;
+            background: #ffffff;
+            &-active {
+                background: #0a2c36;
+                border: 1px solid #e09826;
+            }
+            &:not(:last-child) {
+                margin-right: 32px;
             }
         }
     }

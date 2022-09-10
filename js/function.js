@@ -45,3 +45,17 @@ const service = (params) => {
     }
 }
 service();
+
+const product = (params) => {
+    if($('.js-product-slide').length){
+        var swiper = new Swiper(".js-product-slide", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            navigation: {
+              nextEl: ".product-slide .swiper-button-next",
+              prevEl: ".product-slide .swiper-button-prev",
+            },
+          });
+    }
+}
+product();

@@ -1,0 +1,18 @@
+.franchise {
+    .section__banner {
+        background: url(../images/franchise/bg-banner.png) no-repeat center;
+        background-size: cover;
+        padding: 73px 0;
+        .logo{
+            max-width: 612.06px;
+            margin: auto;
+        }
+    }
+    .section-card{
+        .card{
+            &:not(:last-child){
+                margin-bottom: 48px;
+            }
+        }
+    }
+}
