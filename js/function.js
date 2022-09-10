@@ -29,6 +29,19 @@ const introduce = (params) => {
             },
           });
     }
-
 }
 introduce();
+
+const service = (params) => {
+    if($('.slide-banner').length){
+        var swiper = new Swiper(".slide-banner", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+    }
+}
+service();

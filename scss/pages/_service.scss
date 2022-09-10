@@ -1,98 +1,71 @@
-.introduce {
+.service {
     .section__banner {
-        background: url(../images/introduce/bg-banner.png) no-repeat center center;
-        background-size: 100% 100%;
-        padding-top: 84px;
-        .swiper-pagination {
-            bottom: 24px;
-            &-bullet {
-                width: 24px;
-                height: 24px;
-                opacity: 1;
-                background: #ffffff;
-                &-active {
-                    background: #0a2c36;
-                    border: 1px solid #e09826;
-                }
-                &:not(:last-child) {
-                    margin-right: 32px;
-                }
-            }
-        }
-    }
-    .section__member {
-        padding: 64px 0 111px;
-        .list {
-            display: flex;
-            align-items: baseline;
-            &-item {
-                max-width: calc(100% / 3);
-                width: 100%;
-                text-align: center;
-                &:not(:last-child) {
-                    margin-right: 78px;
-                }
-            }
-        }
+        background: #e5bd89;
         .card {
-            color: #212529;
-            &-img {
-                max-width: 300px;
-                margin: auto auto 48px;
-            }
-            &-tit {
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 0 0 1px #fff;
+            border-radius: 24px;
+            padding: 48px 45px 48px 48px;
+            color: #0a2c36;
+            .title {
                 font-weight: 700;
-                font-size: 28px;
+                font-size: 64px;
                 line-height: 100%;
-                margin-bottom: 16px;
+                margin-bottom: 32px;
+                &-para {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 100%;
+                    margin-bottom: 12px;
+                }
             }
-            &-desc {
+            .desc {
                 font-weight: 400;
-                font-size: 18px;
+                font-size: 24px;
                 line-height: 120%;
             }
         }
-    }
-    .section__info {
-        background: url(../images/introduce/bgs3.png) no-repeat center center;
-        background-size: cover;
-        padding: 64px 0;
-        &-inner {
-            > .row {
-                align-items: center;
-            }
-        }
-        .list {
-            display: flex;
+        .rs-row{
             align-items: center;
-            &-item {
-                padding: 0 16px;
-                &-tit {
-                    font-weight: 700;
-                    font-size: 28px;
-                    line-height: 100%;
-                    color: #212529;
-
-                    margin-bottom: 16px;
-                }
-                &-desc {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 120%;
-                    color: #212529;
-                }
+        }
+        .row{
+            margin: 0;
+            .col{
+                padding: 0;
             }
         }
-        .view{
-            box-shadow: 9px 9px 6px rgba(0, 0, 0, 0.25);
+        .col-left{
+            flex: 1;
         }
-        .col-right {
-            max-width: calc(100% - 472px);
+        .col-right{
+            max-width: calc(100% - 567.2px);
             width: 100%;
-            margin-left: 62px;
-            .col-6{
-                margin-bottom: 32px;
-            }
+            margin-left: 32px;
+        }
+        .swiper-button-next{
+            right: -10px;
+        }
+        .swiper-button-prev{
+            left: 28px;
         }
     }
+.section__service{
+    .section-box{
+        border: none;
+        box-shadow: 0 0 0 1px #0A2C36;;
+        .card-content{
+            background: #FEE7CA;
+            padding-bottom: 24px;
+        }
+        .row{
+            margin: 0;
+            margin: 0 -21px;
+            margin-bottom: -104px;
+        }
+        .col-4{
+            margin-bottom: 104px;
+            padding: 0 21px;
+        }
+    }
+}
 }
