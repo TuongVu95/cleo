@@ -1,0 +1,60 @@
+$font-weight: 300, 400, 500;
+.font-style-normal,.f-style-normal{font-style: normal;}
+.font-style-i,.f-style-i{font-style: italic;}
+.font-style-ob,.f-style-ob{font-style: oblique;}
+
+//font-size post
+@each $val in $font-weight {
+  .f-w-#{$val} {
+    font-weight: $val;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  // color: $headings-color;
+}
+
+p,
+.text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.break-word{
+  word-break: break-word;
+}
+//font-size post
+@each $key, $val in $fs-p {
+  .fs-p-#{$key} {
+    font-size: #{$key}px ;
+    line-height: #{$val}px ;
+  }
+}
+
+@each $breakpoint, $value in $breakpoints-mb {
+  $infix: breakpoint-infix($breakpoint, $breakpoints-mb);
+  @include media-breakpoint-down($breakpoint, $breakpoints-mb) {
+    @each $key, $values in $fs-p-mb{
+      .fs-p#{$infix}-#{$key}{
+        font-size: #{$key}px ;
+        line-height: #{$values}px ;
+      }
+    }
+  }
+}
+
+//truncate
+[class*="truncate"]{ display: -webkit-box; }
+.truncate2{ @include truncate2(2); }
+.truncate3{ @include truncate2(3); }
+
+.txt-uppercase{
+  text-transform: uppercase;
+}

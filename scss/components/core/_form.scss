@@ -1,0 +1,52 @@
+$border-input: .1rem solid #b6c0ce;
+
+.form{
+	&-group{
+		display: inline-flex;
+		align-items: center;
+		.label-text{
+			@extend .m-l-8;
+		}
+		> * {
+			color: $gray-700;
+		}
+	}
+	&-input{
+		position: relative;
+
+		border: none;
+		outline: none;
+		-webkit-appearance: none;
+	}
+	&-checkbox, &-radio{
+		// display: none;
+	}
+	&-checkbox{
+		&:before,&:after{
+			content:'';
+			width: 1.6rem;
+			height: 1.6rem;
+		}
+		&:before{
+			content: "\e9aa";
+			font-family: icon-system;
+			position: absolute;
+			top: 0;
+			right: 0;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1rem;
+		}
+		&:after {
+			display: block;
+			border: $border-input;
+
+			border-radius: .4rem;
+			transition: all .3s ease-in-out;
+			box-shadow: inset 0 .2rem .2rem rgba(0,0,0,.15)
+		}
+
+	}
+}

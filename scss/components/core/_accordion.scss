@@ -1,0 +1,45 @@
+$spacing-button: 1.8rem;
+.accordion{
+    $this: &;
+    &-item{
+        border-bottom: 1px solid #ccc;
+        &.collapse{
+            #{$this}-collapse{
+                display: block
+            }
+            #{$this}-icon{
+                &:before{
+                    content: '\e998';
+                }
+            }
+        }
+    }
+    &-header{
+        @extend .relative;
+    }
+    &-icon{
+        position: absolute;
+        right:0;
+        top: 1.8rem;
+        @include respond-to('sm'){
+            right: 1rem;
+        }
+    }
+    &-button{
+        outline: none;
+        border: none;
+        background: none;
+        width: 100%;
+        @extend .txt-left, .txt-uppercase;
+        padding: $spacing-button 0;
+        font-size: 1.4rem;
+        color: #333;
+        font-family: 'Gotham', Arial, Helvetica, sans-serif;
+        @include respond-to('sm'){
+            padding-left: 20px;
+        }
+    }
+    &-collapse{
+        display: none;
+    }
+}

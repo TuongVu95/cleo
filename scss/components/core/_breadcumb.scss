@@ -1,0 +1,22 @@
+.woff-breadcumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__item {
+    font-size: 1.4rem;
+    color: $black-100;
+    font-weight: 500;
+    &:last-child {
+      color: $gray-600;
+    }
+    &:not(:last-child) {
+      &::after {
+        content: ">";
+        display: inline-block;
+        color: $black-100;
+        line-height: 100%;
+        padding: 0 0.8rem;
+      }
+    }
+  }
+}

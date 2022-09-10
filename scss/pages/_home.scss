@@ -1,0 +1,56 @@
+.section__banner {
+    background: url(../images/home/bgs1-desktop.png) no-repeat center;
+    background-size: cover;
+    padding: 54px 0 94px;
+    &-inner{
+        .row{
+            align-items: center;
+        }
+    }
+    .card {
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        padding: 48px;
+        &-content {
+            color: #333333;
+            > * {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .title {
+        span {
+            display: block;
+        }
+        &-brand {
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 100%;
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 100%;
+        }
+    }
+    .desc {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+    }
+    .slogan{
+        margin-top: -18px;
+        picture{
+            max-width: 431px;
+            margin: auto;
+        }
+    }
+    .rs-col{
+        &-left{
+
+        }
+        &-right{
+
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// Container widths
+//
+.relative {
+  position: relative;
+}
+
+@if $enable-grid-classes {
+  .container {
+    @include max-container();
+    @include make-container-max-widths();
+
+    //mobile
+    @include respond-to('md') {
+      padding: 0 10px;
+    }
+
+    @include respond-to('sm') {
+      @include containermb();
+    }
+  }
+
+    .lc-main{
+      .container{
+        @include respond-to('md') {
+        @extend .p-x-md-0;
+      }
+    }
+  }
+
+
+}

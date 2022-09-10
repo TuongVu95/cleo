@@ -1,0 +1,107 @@
+.footer {
+    background: #0a2c36;
+    box-shadow: inset 0px -1px 0px #e1e3e5;
+    padding: 48px 0;
+    &__inner {
+        .row {
+            justify-content: space-between;
+            margin: 0;
+            flex-wrap: nowrap;
+        }
+        .col-auto {
+            padding: 0;
+            &:not(:last-child){
+                margin-right: 48px;
+            }
+            &:first-child{
+                max-width: 348px;
+                width: 100%;
+            }
+            &:nth-child(2){
+                max-width: 476px;
+                width: 100%;
+            }
+            &:last-child{
+                flex: 1;
+            }
+        }
+    }
+    .info-company {
+        .tit {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 35px;
+            color: #e5bd89;
+            margin-bottom: 16px;
+        }
+    }
+}
+.contact-mail {
+    .mess {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        color: #e5bd89;
+        margin-bottom: 16px;
+    }
+    .form-input {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: justify;
+        color: #32373d;
+
+        background: #f1dccd;
+        border: 1px solid #939ca3;
+        border-radius: 4px 0px 0px 4px;
+        outline: none;
+        width: 260px;
+height: 36px;
+border: none;
+padding: 8px 10px;
+    }
+    .form-submit{
+        color: #212529;
+        font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+
+width: 88px;
+height: 36px;
+
+background: #E5BD89;
+border-radius: 0px 4px 4px 0px;
+border: none;
+outline: none;
+padding: 0;
+    }
+}
+.list {
+    &-item {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+        &-box {
+            display: inline-flex;
+            align-items: center;
+        }
+        .icon {
+            width: 24px;
+            margin-right: 8px;
+        }
+        .content {
+            flex: 1;
+
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #ffffff;
+        }
+    }
+}
+
+.logo-footer {
+    picture{
+        max-width: 160px;
+    }
+}
