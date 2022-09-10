@@ -11,128 +11,141 @@
         line-height: 100%;
     }
 }
-.section__banner {
-    background: url(../images/home/bgs1-desktop.png) no-repeat center;
-    background-size: cover;
-    padding: 54px 0 94px;
-    &-inner {
-        max-width: 1000px;
-        margin: auto;
-        .row {
-            align-items: center;
-            margin: 0;
-        }
-        .col {
-            padding: 0;
-        }
-    }
-    .card {
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 12px;
-        padding: 48px;
-        &-content {
-            color: #333333;
-            > * {
-                margin-bottom: 12px;
-            }
-        }
-    }
-    .title {
-        span {
-            display: block;
-        }
-        &-brand {
-            font-weight: 700;
-            font-size: 64px;
-            line-height: 100%;
-        }
-        &-name {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 100%;
-        }
-    }
-    .desc {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 100%;
-    }
-    .slogan {
-        margin-top: -18px;
-        picture {
-            max-width: 431px;
+.home{
+    .section__banner {
+        background: url(../images/home/bgs1-desktop.png) no-repeat center;
+        background-size: cover;
+        padding: 54px 0 94px;
+        &-inner {
+            max-width: 1000px;
             margin: auto;
-        }
-    }
-    .rs-col {
-        &-left {
-            flex-basis: calc(100% - 432px);
-            max-width: calc(100% - 432px);
-            width: 100%;
-            margin-right: 98px;
-        }
-        &-right {
-            flex: 1;
-        }
-    }
-}
-
-.section2 {
-    background: #fff6ef;
-    position: relative;
-    padding-bottom: 24px;
-    &:before {
-        content: "";
-        background: #fff;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        padding-top: 134px;
-    }
-    .row {
-        margin: 0;
-        align-items: center;
-        .col {
-            padding: 0;
-        }
-    }
-    .card {
-        &-content {
-            text-align: center;
-            > * {
-                margin-bottom: 16px;
+            .row {
+                align-items: center;
+                margin: 0;
             }
-            .desc {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 150%;
-                color: #212529;
-
-                max-width: 524px;
+            .col {
+                padding: 0;
+            }
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            padding: 48px;
+            &-content {
+                color: #333333;
+                > * {
+                    margin-bottom: 12px;
+                }
             }
         }
         .title {
-            max-width: 294px;
-            margin: auto auto 16px;
+            span {
+                display: block;
+            }
+            &-brand {
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 100%;
+            }
+            &-name {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 100%;
+            }
+        }
+        .desc {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 100%;
+        }
+        .slogan {
+            margin-top: -18px;
+            picture {
+                max-width: 431px;
+                margin: auto;
+            }
+        }
+        .rs-col {
+            &-left {
+                flex-basis: calc(100% - 432px);
+                max-width: calc(100% - 432px);
+                width: 100%;
+                margin-right: 98px;
+            }
+            &-right {
+                flex: 1;
+            }
+        }
+    }
+    .section2 {
+        background: #fff6ef;
+        position: relative;
+        padding-bottom: 24px;
+        &:before {
+            content: "";
+            background: #fff;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            padding-top: 134px;
+        }
+        .row {
+            margin: 0;
+            align-items: center;
+            .col {
+                padding: 0;
+            }
+        }
+        .card {
+            &-content {
+                text-align: center;
+                > * {
+                    margin-bottom: 16px;
+                }
+                .desc {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #212529;
+
+                    max-width: 524px;
+                }
+            }
+            .title {
+                max-width: 294px;
+                margin: auto auto 16px;
+            }
+        }
+
+        .rs-col {
+            &-right {
+                max-width: calc(100% - 620px);
+                flex-basis: calc(100% - 620px);
+                width: 100%;
+                margin-left: 120px;
+            }
+            &-left {
+                flex: 1;
+            }
         }
     }
 
-    .rs-col {
-        &-right {
-            max-width: calc(100% - 620px);
-            flex-basis: calc(100% - 620px);
-            width: 100%;
-            margin-left: 120px;
-        }
-        &-left {
-            flex: 1;
+    .section4 {
+        background: #0a2c36;
+        padding: 72px 0 64px;
+        .section-title {
+            margin-bottom: 48px;
+            .tit {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 100%;
+                color: #e5bd89;
+            }
         }
     }
 }
-.btn {
-    border: none;
-}
-.section3 {
+
+.section__service {
     background: #ffffff;
     padding-top: 64px;
     .section-box {
@@ -161,19 +174,11 @@
         }
     }
 }
-.section4 {
-    background: #0a2c36;
-    padding: 72px 0 64px;
-    .section-title {
-        margin-bottom: 48px;
-        .tit {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 100%;
-            color: #e5bd89;
-        }
-    }
+
+.btn {
+    border: none;
 }
+
 .section-box {
     .card {
         &-content {

@@ -1,0 +1,98 @@
+.introduce {
+    .section__banner {
+        background: url(../images/introduce/bg-banner.png) no-repeat center center;
+        background-size: 100% 100%;
+        padding-top: 84px;
+        .swiper-pagination {
+            bottom: 24px;
+            &-bullet {
+                width: 24px;
+                height: 24px;
+                opacity: 1;
+                background: #ffffff;
+                &-active {
+                    background: #0a2c36;
+                    border: 1px solid #e09826;
+                }
+                &:not(:last-child) {
+                    margin-right: 32px;
+                }
+            }
+        }
+    }
+    .section__member {
+        padding: 64px 0 111px;
+        .list {
+            display: flex;
+            align-items: baseline;
+            &-item {
+                max-width: calc(100% / 3);
+                width: 100%;
+                text-align: center;
+                &:not(:last-child) {
+                    margin-right: 78px;
+                }
+            }
+        }
+        .card {
+            color: #212529;
+            &-img {
+                max-width: 300px;
+                margin: auto auto 48px;
+            }
+            &-tit {
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 100%;
+                margin-bottom: 16px;
+            }
+            &-desc {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 120%;
+            }
+        }
+    }
+    .section__info {
+        background: url(../images/introduce/bgs3.png) no-repeat center center;
+        background-size: cover;
+        padding: 64px 0;
+        &-inner {
+            > .row {
+                align-items: center;
+            }
+        }
+        .list {
+            display: flex;
+            align-items: center;
+            &-item {
+                padding: 0 16px;
+                &-tit {
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 100%;
+                    color: #212529;
+
+                    margin-bottom: 16px;
+                }
+                &-desc {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 120%;
+                    color: #212529;
+                }
+            }
+        }
+        .view{
+            box-shadow: 9px 9px 6px rgba(0, 0, 0, 0.25);
+        }
+        .col-right {
+            max-width: calc(100% - 472px);
+            width: 100%;
+            margin-left: 62px;
+            .col-6{
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
