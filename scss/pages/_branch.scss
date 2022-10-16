@@ -122,27 +122,21 @@
         }
     }
     .section-card {
-        .col {
-            picture {
-                padding-right: 24px;
-            }
-        }
         .card {
             .tit {
+                font-weight: 700;
                 font-size: 28px;
+                line-height: 140%;
             }
             &-content{
                 max-width: 100%;
             }
-            .desc {
-                max-width: 576px;
-                margin: auto;
-                a {
-                    font-weight: 700;
-                }
-            }
-            &:first-child {
-                margin-bottom: 48px;
+        }
+        .desc {
+            max-width: 576px;
+            margin: auto;
+            a {
+                font-weight: 700;
             }
         }
     }

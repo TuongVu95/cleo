@@ -3,22 +3,7 @@
         background: url(../images/introduce/bg-banner.png) no-repeat center center;
         background-size: 100% 100%;
         padding-top: 84px;
-        .card {
-            position: relative;
-            max-width: 655px;
-            margin: auto auto 191px;
-            &::before {
-                content: '';
-                display: block;
-                width: 120px;
-                top: 0;
-                left: -120px;
-                position: absolute;
-                background: url(../images/introduce/quotes.png) no-repeat;
-                background-size: contain;
-                min-height: 100px;
-            }
-        }
+
     }
     .section__member {
         padding: 64px 0 111px;
@@ -97,7 +82,7 @@
     }
 }
 .swiper{
-    &-pagination {
+    .swiper-pagination {
         bottom: 24px;
         &-bullet {
             display: inline-block;
