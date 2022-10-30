@@ -58,3 +58,45 @@ p,
 .txt-uppercase{
   text-transform: uppercase;
 }
+
+.typo-title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  color: #333333;
+}
+
+.typo-subtitle {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #333333;
+}
+
+.typo-description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.para-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #4F4F4F;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #212529;
+}
+
+.card-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: #212529;
+}

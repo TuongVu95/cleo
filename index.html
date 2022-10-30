@@ -18,16 +18,43 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
+    <div class="header__inner header-top">
+      <div class="container">
         <div class="row">
-          <div class="col-auto">
             <div class="header__logo">
               <a href="/">
                 <img src="images/home/logo.png" alt="Logo">
               </a>
             </div>
-          </div>
+            <div class="header__search">
+              <form action="">
+                <div class="form-group">
+                  <div class="form-search">
+                    <input type="text" class="form-search-input" placeholder="Nhập thông tin cần tìm...">
+                    <span class="form-search-icon">
+                      <img src="images/home//icon/ic-search.svg" alt="">
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="header__hotline">
+              <div class="col-left">
+                <span class="icon-call">
+                  <img src="images/home//icon/ic-hotline.svg" alt="">
+                </span>
+              </div>
+              <div class="col-right">
+                <p>Hotline</p>
+                <p>0888 340 979</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__inner header-bot">
+      <div class="container">
+        <div class="row">
           <div class="col-auto">
             <div class="header__nav">
               <ul class="nav">
@@ -70,10 +97,11 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
 
       </div>
-    </div>
   </header>
     <main class="page-wrap home">
       <section class="section__page section__banner">
