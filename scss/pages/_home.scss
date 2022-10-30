@@ -13,9 +13,9 @@
 }
 .home{
     .section__banner {
-        background: url(../images/home/bgs1-desktop.png) no-repeat center;
-        background-size: cover;
-        padding: 54px 0 94px;
+        background: url(../images/home/bgs1-desktop.png) no-repeat top center;
+        background-size: 100% 100%;
+        padding: 243px 0 19px;
         &-inner {
             max-width: 1000px;
             margin: auto;
@@ -30,10 +30,10 @@
         .card {
             background: rgba(255, 255, 255, 0.7);
             border-radius: 12px;
-            padding: 48px;
+            padding: 15px 48px;
             &-content {
-                color: #333333;
-                > * {
+                color: #333;
+                & *:not(:last-child) {
                     margin-bottom: 12px;
                 }
             }
@@ -42,35 +42,20 @@
             span {
                 display: block;
             }
-            &-brand {
-                font-weight: 700;
-                font-size: 64px;
-                line-height: 100%;
-            }
-            &-name {
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 100%;
-            }
-        }
-        .desc {
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 100%;
         }
         .slogan {
-            margin-top: -18px;
             picture {
-                max-width: 431px;
+                max-width: 582px;
                 margin: auto;
             }
         }
         .rs-col {
             &-left {
-                flex-basis: calc(100% - 432px);
-                max-width: calc(100% - 432px);
+                // flex-basis: calc(100% - 582px);
+                // max-width: calc(100% - 582px);
+                max-width: 637px;
                 width: 100%;
-                margin-right: 98px;
+                margin: 0 auto;
             }
             &-right {
                 flex: 1;
@@ -78,17 +63,16 @@
         }
     }
     .section2 {
-        background: #fff6ef;
         position: relative;
-        padding-bottom: 24px;
-        &:before {
-            content: "";
-            background: #fff;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
-            padding-top: 134px;
-        }
+        padding-bottom: 72px;
+        // &:before {
+        //     content: "";
+        //     background: #fff;
+        //     width: 100%;
+        //     position: absolute;
+        //     bottom: 0;
+        //     padding-top: 134px;
+        // }
         .row {
             margin: 0;
             align-items: center;
@@ -96,71 +80,55 @@
                 padding: 0;
             }
         }
-        .card {
-            &-content {
-                text-align: center;
-                > * {
-                    margin-bottom: 16px;
-                }
-                .desc {
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 150%;
-                    color: #212529;
-
-                    max-width: 524px;
-                }
-            }
-            .title {
-                max-width: 294px;
-                margin: auto auto 16px;
-            }
-        }
 
         .rs-col {
             &-right {
-                max-width: calc(100% - 620px);
-                flex-basis: calc(100% - 620px);
+                // max-width: calc(100% - 644px);
+                flex-basis: calc(100% - 644px);
+                max-width: 644px;
                 width: 100%;
-                margin-left: 120px;
+                margin-left: 32px;
+                .title {
+                    font-family: 'Inter', 'Roboto', 'Helvetica Neue';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 100%;
+                    color: #1A1A1A;
+                }
+                & *:not(:last-child) {
+                    margin-bottom: 16px;
+                }
+                
             }
             &-left {
                 flex: 1;
             }
         }
     }
-
-
 }
 .section__favourite {
-    background: #0a2c36;
-    padding: 72px 0 64px;
+    padding: 24px 0 32px;
     .section-title {
         margin-bottom: 48px;
-        .tit {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 100%;
-            color: #e5bd89;
-        }
+    }
+    .typo-subtitle {
+        color: #0A2C36;
     }
 }
 .section__service {
     background: #ffffff;
-    padding-top: 64px;
+    padding-top: 72px;
     .section-box {
         border: 1px solid #0a2c36;
+        border-bottom: 0;
         border-radius: 24px 24px 0px 0px;
         padding: 0 36px;
     }
     .section-title {
         text-align: center;
-        .tit {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 100%;
-            color: #e5bd89;
-
+        .typo-subtitle {
+            color: #FEE7CA;
             background: #0a2c36;
             border-radius: 0px 0px 6px 6px;
             max-width: 508px;
@@ -173,6 +141,12 @@
             margin-bottom: 48px;
         }
     }
+    p.card-btn {
+        position: absolute;
+        bottom: 24px;
+        left: 0;
+        right: 0;
+    }
 }
 
 .btn {
@@ -182,9 +156,10 @@
 .section-box {
     .card {
         &-content {
-            background: #e5bd89;
+            background: #FEE7CA;
             color: #212529;
-            padding: 22px 13px 50px;
+            padding: 22px 25px 24px;
+            min-height: 258px;
             > *:not(:last-child) {
                 margin-bottom: 16px;
             }
@@ -219,14 +194,14 @@
     position: relative;
     .item {
         &-img {
-            margin: auto auto 24px;
-            max-width: 258px;
+            margin: auto auto 16px;
+            max-width: 365px;
         }
         &-tit {
             font-weight: 400;
             font-size: 20px;
             line-height: 120%;
-            color: #e5bd89;
+            color: #0A2C36;
         }
     }
 
@@ -253,8 +228,9 @@
     }
 }
 .section-card {
-    background: #f1dccd;
-    padding: 64px 0;
+    background: url(../../images/home/bg-bottom.png) no-repeat center;
+    background-size: 100% 100%;
+    padding: 193px 0;
     .card {
         max-width: 776px;
         margin: auto;
