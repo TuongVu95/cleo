@@ -18,25 +18,52 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
+    <div class="header__inner header-top">
+      <div class="container">
         <div class="row">
-          <div class="col-auto">
             <div class="header__logo">
               <a href="/">
                 <img src="images/home/logo.png" alt="Logo">
               </a>
             </div>
-          </div>
+            <div class="header__search">
+              <form action="">
+                <div class="form-group">
+                  <div class="form-search">
+                    <input type="text" class="form-search-input" placeholder="Nhập thông tin cần tìm...">
+                    <span class="form-search-icon">
+                      <img src="images/home//icon/ic-search.svg" alt="">
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="header__hotline">
+              <div class="col-left">
+                <span class="icon-call">
+                  <img src="images/home//icon/ic-hotline.svg" alt="">
+                </span>
+              </div>
+              <div class="col-right">
+                <p>Hotline</p>
+                <p>0888 340 979</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__inner header-bot">
+      <div class="container">
+        <div class="row">
           <div class="col-auto">
             <div class="header__nav">
               <ul class="nav">
-                <li class="nav__item ">
+                <li class="nav__item">
                   <a href="/index.html" class="nav__item-link nav-text">
                     TRANG CHỦ
                   </a>
                 </li>
-                <li class="nav__item ">
+                <li class="nav__item">
                   <a href="/introduce.html" class="nav__item-link nav-text">
                     GIỚI THIỆU
                   </a>
@@ -46,7 +73,7 @@
                     DỊCH VỤ
                   </a>
                 </li>
-                <li class="nav__item ">
+                <li class="nav__item">
                   <a href="/product.html" class="nav__item-link nav-text">
                     SẢN PHẨM
                   </a>
@@ -54,6 +81,11 @@
                 <li class="nav__item ">
                   <a href="/franchise.html" class="nav__item-link nav-text">
                     NHƯỢNG QUYỀN
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="/news.html" class="nav__item-link nav-text">
+                    TIN TỨC
                   </a>
                 </li>
                 <li class="nav__item">
@@ -70,10 +102,11 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
 
       </div>
-    </div>
   </header>
     <main class="page-wrap service">
       <section class="section__page section__banner">
@@ -262,84 +295,112 @@
         </div>
       </section>
     </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="row">
-          <div class="col-auto">
-            <div class="contact-mail">
-              <p class="mess">Hãy liên hệ với chúng tôi khi cần hỗ trợ</p>
-              <form action="">
-                  <div class="form-group">
-                  <input type="text" placeholder="Email của bạn*" class="form-input">
-                  <input type="submit" value="Gửi" class="form-submit">
-                </div>
-                </form>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="row">
+            <div class="col-auto">
+              <div class="contact-mail">
+                <p class="mess">Hãy liên hệ với chúng tôi khi cần hỗ trợ</p>
+                <form action="">
+                    <div class="form-group">
+                    <input type="text" placeholder="Email của bạn*" class="form-input">
+                    <input type="submit" value="Gửi" class="form-submit">
+                  </div>
+                  </form>
+              </div>
             </div>
-          </div>
-
-          <div class="col-auto">
-            <div class="info-company">
-              <p class="tit">CÔNG TY....</p>
-              <ul class="list">
-                <li class="list-item">
-                  <div class="list-item-box">
-                    <span class="icon">
-                      <img src="images/home//icon/location.svg" alt="">
-                    </span>
-                    <span class="content">
-                      232/29 Cộng Hòa, Phường 12, Quận Tân Bình, TP.HCM
-                    </span>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="list-item-box">
-                    <span class="icon">
-                      <img src="images/home//icon/ic-call.svg" alt="">
-                    </span>
-                    <a class="content" href="tel:0888 340 979">
-                      0888 340 979
-                    </a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="list-item-box">
-                    <span class="icon">
-                      <img src="images/home//icon/mail.svg" alt="">
-                    </span>
-                    <a class="content">
-                      cleo@gmail.com
-                    </a>
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="list-item-box">
-                    <span class="icon">
-                      <img src="images/home//icon/ic-time.svg" alt="">
-                    </span>
-                    <span class="content">
-                      8h30-22h00
-                    </span>
-                  </div>
-                </li>
-              </ul>
+  
+            <div class="col-auto">
+              <div class="info-company">
+                <p class="tit">Hệ thống Spa nhượng quyền thương hiệu với phương pháp
+                  làm đẹp tự nhiên</p>
+                <ul class="list">
+                  <li class="list-item">
+                    <div class="list-item-box">
+                      <span class="icon">
+                        <img src="images/home//icon/location.svg" alt="">
+                      </span>
+                      <span class="content">
+                        232/29 Cộng Hòa, Phường 12, Quận Tân Bình, TP.HCM
+                      </span>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-item-box">
+                      <span class="icon">
+                        <img src="images/home//icon/ic-call.svg" alt="">
+                      </span>
+                      <a class="content" href="tel:0888 340 979">
+                        0888 340 979
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-item-box">
+                      <span class="icon">
+                        <img src="images/home//icon/mail.svg" alt="">
+                      </span>
+                      <a class="content">
+                        cleo@gmail.com
+                      </a>
+                    </div>
+                  </li>
+                  <li class="list-item">
+                    <div class="list-item-box">
+                      <span class="icon">
+                        <img src="images/home//icon/ic-time.svg" alt="">
+                      </span>
+                      <span class="content">
+                        8h30-22h00
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-
-          <div class="col-auto">
-            <div class="logo-footer">
-              <picture>
-                <img src="images/home/logo.png" alt="">
-              </picture>
+  
+            <div class="col-auto">
+              <div class="logo-footer">
+                <picture>
+                  <img src="images/home/logo.png" alt="">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </footer>
+    <div class="copyright txt-center">
+      <p class="tit">ĐẾN VỚI CLEO QUA</p>
+      <div class="logo">
+        <a href="">
+          <picture>
+            <img src="images/home/fb.png" alt="">
+          </picture>
+        </a>
+        <a href="">
+          <picture>
+            <img src="images/home/zalo.png" alt="">
+          </picture>
+        </a>
+        <a href="">
+          <picture>
+            <img src="images/home/insta.png" alt="">
+          </picture>
+        </a>
+        <a href="">
+          <picture>
+            <img src="images/home/skype.png" alt="">
+          </picture>
+        </a>
+        <a href="">
+          <picture>
+            <img src="images/home/tiktok.png" alt="">
+          </picture>
+        </a>
+      </div>
     </div>
-  </footer>
-  <small class="copyright">
-    <span>Copyright © 2022 WOLF. All rights reserved.</span>
-  </small>
   <script src="js/function.js"></script>
 </body>
 

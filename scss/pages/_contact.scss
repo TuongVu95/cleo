@@ -75,6 +75,7 @@
         line-height: 28px;
         text-align: justify;
         color: #4f4f4f;
+        background: #F2F2F2;
     }
     .form-textarea {
         width: 650px;
@@ -88,9 +89,11 @@
         line-height: 28px;
         text-align: justify;
         color: #4f4f4f;
+        background: #F2F2F2;
         outline: none;
     }
     .require {
+        font-style: italic;
         font-weight: 400;
         font-size: 20px;
         line-height: 23px;

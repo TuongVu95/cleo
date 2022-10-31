@@ -1,9 +1,12 @@
 .branch {
+    .section__page {
+        background: #F2F2F2;
+    }
     .section__banner {
         // background: url(../images/branch/bgs1.png) no-repeat center;
         // background-size: cover;
         position: relative;
-        padding: 41px 0 113px;
+        padding-top: 150px;
         &::before {
             content: "";
 
@@ -13,41 +16,29 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 306px;
+            height: 664px;
         }
         .row {
             align-items: center;
         }
         .col-left {
-            max-width: calc(100% - 270px);
+            max-width: calc(100% - 453px);
             width: 100%;
         }
         .col-right {
             flex: 1;
         }
         .box-info {
-            color: #fff;
             max-width: 347px;
             margin: auto;
-            .title {
-                font-weight: 700;
-                font-size: 64px;
-                line-height: 100%;
-                color: #ffffff;
-                margin-bottom: 32px;
-                &-para {
-                    font-weight: 700;
-                    font-size: 32px;
-                    line-height: 100%;
-                    color: #ffffff;
-                    margin-bottom: 12px;
-                }
+            & * {
+                color: #fff;
             }
-            .desc {
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 120%;
-                color: #ffffff;
+            .typo-title {
+                margin-bottom: 32px;
+            }
+            .typo-subtitle {
+                margin-bottom: 12px;
             }
         }
         .col-auto {
@@ -57,25 +48,25 @@
             background: #ffffff;
             border-radius: 1000px 1000px 0px 0px;
             color: #0a2c36;
-            height: 265px;
+            height: 514px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             .count {
                 font-weight: 700;
-                font-size: 64px;
+                font-size: 110px;
                 line-height: 100%;
             }
             .branch {
                 font-weight: 700;
-                font-size: 32px;
+                font-size: 55px;
                 line-height: 100%;
             }
         }
     }
     .section__partner {
-        padding-bottom: 48px;
+        padding: 72px 0 82px;
         .rs-row {
             margin: 0;
             flex-wrap: nowrap;
@@ -84,24 +75,13 @@
             }
         }
         .col-right {
-            max-width: calc(100% - 340px);
+            max-width: calc(100% - 388px);
             width: 100%;
-        }
-        .col-left {
-            margin-left: 40px;
         }
         .box-info {
             color: #212529;
-            .tit {
-                font-weight: 700;
-                font-size: 28px;
-                line-height: 100%;
-                margin-bottom: 16px;
-            }
-            .desc {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 120%;
+            margin-right: 72px;
+            .para-title {
                 margin-bottom: 16px;
             }
         }
@@ -109,10 +89,10 @@
             text-align: center;
             &-name {
                 p {
-                    font-weight: 400;
+                    font-weight: 700;
                     font-size: 20px;
                     line-height: 120%;
-                    color: #0a2c36;
+                    color: #0A2C36;
                 }
             }
         }
@@ -121,22 +101,40 @@
             margin: auto auto 24px;
         }
     }
-    .section-card {
-        .card {
-            .tit {
-                font-weight: 700;
-                font-size: 28px;
-                line-height: 140%;
-            }
-            &-content{
-                max-width: 100%;
-            }
+    .section__member {
+        background: #fff;
+        padding: 64px 0;
+        &-inner {
+            display: flex;
+            align-items: center;
         }
-        .desc {
-            max-width: 576px;
-            margin: auto;
-            a {
-                font-weight: 700;
+        &-img {
+            flex: 1;
+        }
+        &-card {
+            width: 100%;
+            max-width: 696px;
+            margin-left: 48px;
+            .card {
+                background: rgba(241, 220, 205, 0.7);
+                padding: 32px;
+                &:first-child {
+                    border-radius: 24px 24px 0px 0px;
+                    margin-bottom: 2px;
+                }
+                &:last-child {
+                    border-radius: 0px 0px 24px 24px;
+                    margin-top: 2px;
+                }
+                .para-title {
+                    line-height: 140%;
+                    color: #1A1A1A;
+                    margin: 16px 0;
+                }
+                .para-desc {
+                    color: #212529;
+                    max-width: 576px;
+                }
             }
         }
     }
