@@ -13,9 +13,10 @@
 }
 .home {
     .section__banner {
-        background: url(../images/home/bgs1-desktop.png) no-repeat center;
+        background: url(../images/home/bgs1-desktop.png) no-repeat top center;
         background-size: cover;
-        padding: 243px 0 204px;
+        padding: 243px 0 20px;
+        max-height: 664px;
         &-inner {
             max-width: 1000px;
             margin: auto;
@@ -60,7 +61,7 @@
         }
         .slogan {
             picture {
-                max-width: 431px;
+                max-width: 582px;
                 margin: auto;
             }
         }
@@ -120,6 +121,7 @@
             }
         }
     }
+
 }
 .section__favourite {
     padding: 72px 0 0;
@@ -259,13 +261,22 @@
     .item {
         &-img {
             margin: auto auto 24px;
-            max-width: 258px;
+            // max-width: 258px;
+
+            border-radius: 12px;
+            img{
+                box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.35);
+            border-radius: inherit;
+
+            }
         }
         &-tit {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 120%;
-            color: #e5bd89;
+            margin-top: 24px;
+            font-weight: 700;
+font-size: 20px;
+line-height: 120%;
+color: #0A2C36;
+
         }
     }
 }
@@ -291,8 +302,10 @@
     }
 }
 .section-card {
-    background: #f1dccd;
-    padding: 64px 0;
+    background: url(../images/home/bgs5-desktop.png) no-repeat center;
+    background-size: cover;
+    padding: 193px 0;
+    margin-top: 72px;
     .card {
         max-width: 776px;
         margin: auto;
