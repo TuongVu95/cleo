@@ -1,9 +1,9 @@
 const fnHome = () => {
     if($('.slide').length){
     var swiper = new Swiper(".slide", {
-        slidesPerView: 4,
-        spaceBetween: 32,
-        slidesPerGroup: 4,
+        slidesPerView: 3,
+        spaceBetween: 16,
+        slidesPerGroup: 3,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
