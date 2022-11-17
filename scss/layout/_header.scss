@@ -22,10 +22,26 @@
     }
     @include respond-to('md'){
     padding-bottom: 8px;
+    .menu-mb-ic{
+        display: block;
+    }
         .col-menu-mb{
             display: none;
         }
+        .col-auto{
+            padding: 0 !important;
+        }
         &__logo{
+            display: flex;
+            align-items: center;
+            .menu-mb-ic{
+                width: 24px;
+                font-size: 24px;
+                margin-right: 8px;
+                i{
+                    color: $white;
+                }
+            }
             a{
                 max-width: 46px;
             }
