@@ -1,7 +1,7 @@
 .header{
     background: #0A2C36;
-    padding-bottom: 24px;
     &__inner{
+        padding-bottom: 10px;
         > .row{
             align-items: center;
             justify-content: space-between;
@@ -48,9 +48,14 @@
         }
     }
 }
+.nav-desk{
+    background: #E5BD89;
+    padding: 16px 0;
+}
 .nav{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     &__item{
         &-link{
@@ -60,16 +65,19 @@
             padding: 10px;
         }
         .nav-text{
-            color: #FDFDFD;
+            color: #0A2C36;
             font-weight: 400;
             font-size: 16px;
             line-height: 100%;
+            padding: 10px;
         }
         &.active{
             background: #E5BD89;
             border-radius: 4px;
+            background: #0A2C36;
+border-radius: 4px;
             .nav-text{
-                color: #0A2C36;
+                color: $white;
                 font-weight: 700;
             }
         }
