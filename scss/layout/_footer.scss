@@ -25,6 +25,24 @@
                 flex: 1;
             }
         }
+        @include respond-to('md'){
+            .row {
+                flex-wrap: wrap;
+            }
+            .col-auto {
+                padding: 0;
+                &:not(:last-child){
+                    margin-right: 0;
+                }
+                &:first-child{
+                    max-width: 100%;
+                }
+                &:nth-child(2){
+                    max-width: 100%;
+                    padding-top: 12px;
+                }
+        }
+    }
     }
     .info-company {
         .tit {
@@ -34,6 +52,9 @@
             color: #e5bd89;
             margin-bottom: 16px;
         }
+    }
+    @include respond-to('md'){
+        padding: 24px 0;
     }
 }
 .contact-mail {
@@ -103,5 +124,11 @@ padding: 0;
 .logo-footer {
     picture{
         max-width: 160px;
+    }
+    @include respond-to('md'){
+        margin-top: 16px;
+        picture{
+            margin: auto;
+        }
     }
 }
