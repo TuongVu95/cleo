@@ -1,18 +1,22 @@
+var $window = $(window), $width = $window.width();
+var $desk = $width > 992;
 const fnHome = () => {
     if($('.slide').length){
-    var swiper = new Swiper(".slide", {
-        slidesPerView: 3,
-        spaceBetween: 16,
-        slidesPerGroup: 3,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+      if($desk){
+        var swiper = new Swiper(".slide", {
+          slidesPerView: 3,
+          spaceBetween: 16,
+          slidesPerGroup: 3,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      }
     }
 }
 fnHome();
