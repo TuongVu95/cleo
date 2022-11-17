@@ -2,16 +2,52 @@
     .section__banner {
         background: url(../images/franchise/bg-banner.png) no-repeat center;
         background-size: cover;
-        padding: 73px 0;
+        padding: 100px 0;
         .logo{
-            max-width: 612.06px;
+            max-width: 636px;
             margin: auto;
+        }
+        @include respond-to(sm) {
+            background: url(../images/franchise/bg-bannermb.png) no-repeat center;
+            padding: 268px 0;
         }
     }
     .section-card{
+        background: #FFFFFF;
+        padding: 64px 0;
+        margin-top: 0;
         .card{
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 24px;
             &:not(:last-child){
                 margin-bottom: 48px;
+                @include respond-to(sm) {
+                    margin-bottom: 0;
+                }
+            }
+            @include respond-to(sm) {
+                background: #FFFFFF;
+                padding: 32px 0;
+            }
+        }
+        br {
+            display: none;
+        }
+        @include respond-to(sm) {
+            padding: 0;
+            .card-btn {
+                display: none;
+            }
+            .desc {
+                font-size: 17px;
+                line-height: 150%;
+                margin-bottom: 0;
+            }
+            .tit {
+                margin-bottom: 32px;
+            }
+            br {
+                display: block;
             }
         }
     }

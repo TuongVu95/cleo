@@ -314,6 +314,10 @@
                     .desc {
                         font-size: 14px;
                         line-height: 140%;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
                     }
                 }
                 &-btn {
@@ -477,6 +481,19 @@
     }
     &-next {
         right: 0;
+    }
+    @include respond-to('md'){
+        width: 21.14px;
+        height: 21.14px;
+        img {
+            max-width: 12px;
+        }
+         &-prev {
+        left: 0;
+    }
+    &-next {
+        right: 0;
+    }
     }
 }
 .section-card {
