@@ -1,12 +1,16 @@
 .service {
+    overflow: hidden;
     .section__banner {
-        background: #e5bd89;
+        background: url(../images/service/bg-banner.png) no-repeat center;
+        background-size: cover;
+        padding: 18px 0;
+        background-attachment: fixed;
         .card {
-            background: rgba(255, 255, 255, 0.25);
             box-shadow: 0 0 0 1px #fff;
             border-radius: 24px;
             padding: 48px 45px 48px 48px;
             color: #0a2c36;
+            background: rgba(255, 255, 255, 0.7);
             .title {
                 font-weight: 700;
                 font-size: 64px;
@@ -25,47 +29,130 @@
                 line-height: 120%;
             }
         }
-        .rs-row{
+        .rs-row {
             align-items: center;
         }
-        .row{
+        .row {
             margin: 0;
-            .col{
+            justify-content: space-between;
+            .col {
                 padding: 0;
             }
         }
-        .col-left{
-            flex: 1;
+        .col {
+            flex: 1 calc(100% / 2 - 16px);
+            max-width: calc(100% / 2 - 16px);
         }
-        .col-right{
-            max-width: calc(100% - 567.2px);
-            width: 100%;
-            margin-left: 32px;
-        }
-        .swiper-button-next{
+        .swiper-button-next {
             right: -20px;
         }
-        .swiper-button-prev{
-            left: 20px;
+        .swiper-button-prev {
+            left: -20px;
+        }
+        @include respond-to('md'){
+            background: url(../images/service/bg-banner-mb.png) no-repeat center;
+            background-size: cover;
+            padding: 104px 0 65px;
+
+            .row{
+                .col {
+                    flex: 1 100%;
+                    max-width: 100%;
+                    &-left{
+                        margin-bottom: 22px;
+                    }
+                    &-right{
+                        padding: 0 10px;
+                    }
+                }
+            }
+
+            .card {
+                border-radius: 12;
+                padding: 32px 48px;
+                text-align: center;
+                * {
+                    color: #333333;
+                }
+                .title {
+                    font-size: 36px;
+                    line-height: 100%;
+                    margin-bottom: 12px;
+                    &-para {
+                        font-size: 20px;
+                        line-height: 100%;
+                    }
+                }
+                .desc {
+                    font-size: 16px;
+line-height: 140%;
+color: #333333;
+                }
+            }
+
+            .swiper-button-next {
+                right: 0px;
+            }
+            .swiper-button-prev {
+                left: 0px;
+            }
         }
     }
-.section__service{
-    .section-box{
-        border: none;
-        box-shadow: 0 0 0 1px #0A2C36;;
-        .card-content{
-            background: #FEE7CA;
-            padding-bottom: 24px;
-        }
-        .row{
-            margin: 0;
-            margin: 0 -21px;
-            margin-bottom: -104px;
-        }
-        .col-4{
-            margin-bottom: 104px;
-            padding: 0 21px;
+    .section__service {
+        .section-box {
+            border: none;
+            box-shadow: 0 0 0 1px #0a2c36;
+            .card {
+                &-content {
+                    background: #fee7ca;
+                    padding-bottom: 24px;
+                }
+                .tit {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+            .row {
+                margin: 0;
+                margin: 0 -21px;
+                // margin-bottom: -104px;
+            }
+            .col-4 {
+                margin-bottom: 48px;
+                padding: 0 21px;
+            }
+            @include respond-to('md'){
+                box-shadow: none;
+                .section-title{
+                    .tit{
+                        font-size: 28px;
+                        line-height: 100%;
+                        color: #0A2C36;
+                        background: transparent;
+                        margin-bottom: 32px;
+                        height: auto;
+                    }
+                }
+                .row {
+                    flex-wrap: wrap;
+                    overflow-x: unset;
+                    margin: 0 -4px;
+                    .col-md-6{
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                        padding: 0 4px;
+                        margin-bottom: 32px;
+                    }
+                }
+                .card {
+                    &-content{
+                        .tit{
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
         }
     }
-}
 }

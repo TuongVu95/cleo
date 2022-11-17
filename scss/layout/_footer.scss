@@ -1,7 +1,7 @@
 .footer {
     background: #0a2c36;
     box-shadow: inset 0px -1px 0px #e1e3e5;
-    padding: 48px 0;
+    padding: 48px 0 0;
     &__inner {
         .row {
             justify-content: space-between;
@@ -10,39 +10,42 @@
         }
         .col-auto {
             padding: 0;
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-right: 48px;
             }
-            &:first-child{
+            &:first-child {
                 max-width: 348px;
                 width: 100%;
             }
-            &:nth-child(2){
+            &:nth-child(2) {
                 max-width: 476px;
                 width: 100%;
             }
-            &:last-child{
+            &:last-child {
                 flex: 1;
             }
         }
-        @include respond-to('md'){
+        @include respond-to("md") {
             .row {
                 flex-wrap: wrap;
             }
             .col-auto {
-                padding: 0;
-                &:not(:last-child){
+                padding: 0 !important;
+                &:not(:last-child) {
                     margin-right: 0;
                 }
-                &:first-child{
+                &:first-child {
                     max-width: 100%;
                 }
-                &:nth-child(2){
+                &:nth-child(2) {
                     max-width: 100%;
                     padding-top: 12px;
                 }
+                &:last-child {
+                    flex: 1 100%;
+                }
+            }
         }
-    }
     }
     .info-company {
         .tit {
@@ -51,10 +54,20 @@
             line-height: 35px;
             color: #e5bd89;
             margin-bottom: 16px;
+            text-transform: uppercase;
+            max-width: 435px;
+        }
+        @include respond-to("md") {
+            padding-top: 16px;
+            .tit{
+                font-size: 20px;
+line-height: 28px;
+            }
         }
     }
-    @include respond-to('md'){
+    @include respond-to("md") {
         padding: 24px 0;
+
     }
 }
 .contact-mail {
@@ -77,24 +90,42 @@
         border-radius: 4px 0px 0px 4px;
         outline: none;
         width: 260px;
-height: 36px;
-border: none;
-padding: 8px 10px;
+        height: 36px;
+        border: none;
+        padding: 8px 10px;
+        flex: 1;
     }
-    .form-submit{
+    .form-submit {
         color: #212529;
         font-weight: 700;
-font-size: 16px;
-line-height: 100%;
+        font-size: 16px;
+        line-height: 100%;
 
-width: 88px;
-height: 36px;
+        width: 88px;
+        height: 36px;
 
-background: #E5BD89;
-border-radius: 0px 4px 4px 0px;
-border: none;
-outline: none;
-padding: 0;
+        background: #e5bd89;
+        border-radius: 0px 4px 4px 0px;
+        border: none;
+        outline: none;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @include respond-to('md'){
+        .form{
+            &-group{
+                max-width: 267px;
+                width: 100%;
+            }
+            &-input {
+                width: 100%;
+            }
+            &-submit{
+                width: 73px;
+            }
+        }
     }
 }
 .list {
@@ -118,17 +149,62 @@ padding: 0;
             line-height: 21px;
             color: #ffffff;
         }
+        @include respond-to('md'){
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+            .icon {
+                width: 18px;
+            }
+            .content {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
     }
 }
 
 .logo-footer {
-    picture{
+    picture {
         max-width: 160px;
     }
-    @include respond-to('md'){
+    @include respond-to("md") {
         margin-top: 16px;
-        picture{
+        picture {
             margin: auto;
+        }
+    }
+}
+.copyright{
+    background: #E5BD89;
+    box-shadow: inset 0px -1px 0px #E1E3E5;
+    margin-top: 48px;
+    padding: 16px 0 24px;
+    .list-social{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        justify-content: center;
+    }
+    .social{
+        picture{
+            max-width: 32px;
+            margin: auto;
+        }
+    }
+    .para-tit{
+        font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+
+color: #0A2C36;
+margin-bottom: 16px;
+    }
+    @include respond-to('md'){
+        margin-top: 24px;
+        .para-tit{
+                font-size: 20px;
+                line-height: 29px;
         }
     }
 }

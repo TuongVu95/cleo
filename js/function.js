@@ -18,6 +18,21 @@ const fnHome = () => {
         });
       }
     }
+
+
+    const navMobile = $('.nav-mb');
+  const navClose = $('.js-nav-close'), mask = $('.js-mask');
+  const menuMb = $('.js-menu-mb');
+
+  menuMb.click(function(){
+    navMobile.addClass('open');
+    $('html,body').addClass('disable-scroll');
+  });
+
+  navClose.click(function(){
+    navMobile.removeClass('open');
+    $('html,body').removeClass('disable-scroll');
+  });
 }
 fnHome();
 
