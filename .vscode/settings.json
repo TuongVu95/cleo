@@ -1,0 +1,10 @@
+{
+    "terminal.explorerKind": "external",
+    "terminal.integrated.automationProfile.linux": {
+    
+    },
+    "terminal.integrated.automationProfile.osx": {
+    
+    },
+    "terminal.integrated.fontWeightBold": "bold"
+}
