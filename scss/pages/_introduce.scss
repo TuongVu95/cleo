@@ -1,6 +1,6 @@
 .introduce {
     .section__banner {
-        max-height: 664px;
+
         overflow: hidden;
         video {
             width: 100%;
@@ -9,8 +9,8 @@
                 width: 100%;
             }
         }
-        .video-wrapper {
-            // @include aspect-ratio(1440, 664, 0);
+        @include respond-to('md'){
+
         }
     }
     .section-intro {

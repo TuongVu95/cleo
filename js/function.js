@@ -38,6 +38,7 @@ fnHome();
 
 
 const introduce = (params) => {
+  const $video = $('.js-video');
     if($('.js-banner').length){
         var swiper = new Swiper(".js-banner", {
             slidesPerView: 1,
