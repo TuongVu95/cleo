@@ -2,3 +2,5 @@
 service copy.html
 
 **/node_modules
+# dependencies
+/node_modules
