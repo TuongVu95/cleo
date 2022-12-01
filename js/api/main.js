@@ -73,10 +73,10 @@ fetch(baseUrl)
                              <img src="${imgUrl}${itemR.image}" alt="">
                             </div>
                             <div class="post__content">
-                                <div class="post--subtitle f-w-700 fs-p-20">
+                                <div class="post--subtitle f-w-700 fs-p-20 truncate2">
                                     ${itemR.title}
                                 </div>
-                                <div class="post--text fs-p-14">
+                                <div class="post--text fs-p-14 truncate2">
                                     ${itemR.description}
                                 </div>
                                 <div class="text--time">
