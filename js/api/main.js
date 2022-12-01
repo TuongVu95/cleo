@@ -41,30 +41,54 @@ fetch(baseUrl)
                     `
                 $('.main-post').append(div);
             }
-
+            var counter = 0;
             for (let itemR of TopPostRight) {
-                let divR = `
-                        <div class="line-news m-y-16"></div>
-                        <div class="news-list m-t-8">
-                            <div class="news-list--img">
-                                <picture>
-                                    <source media="(max-width: 992px)" srcset="">
-                                    <img src="${imgUrl}${itemR.image}" alt="">
-                                </picture>
+                counter++;
+                if (counter <= 5) {
+                    let divR = `
+                    <div class="line-news m-y-16"></div>
+                    <div class="news-list m-t-8">
+                        <div class="news-list--img">
+                            <picture>
+                                <source media="(max-width: 992px)" srcset="">
+                                <img src="${imgUrl}${itemR.image}" alt="">
+                            </picture>
+                    </div>
+                        <div class="news-list__content m-l-12 ">
+                            <div class="news-list--title f-w-700 fs-p-18 truncate2">
+                                ${itemR.title}
+                            </div>
+                            <div class="text--time fs-p-12 p-t-4 ">
+                                5 giờ trước
+                            </div>
                         </div>
-                            <div class="news-list__content m-l-12 ">
-                                <div class="news-list--title f-w-700 fs-p-18 truncate2">
+                    </div>  
+                `
+                    $('.main-post-right').append(divR);
+                }
+                else {
+                    let divBottom = `
+                            <div class="post-item">
+                            <div class="post--img">
+                             <img src="${imgUrl}${itemR.image}" alt="">
+                            </div>
+                            <div class="post__content">
+                                <div class="post--subtitle f-w-700 fs-p-20">
                                     ${itemR.title}
                                 </div>
-                                <div class="text--time fs-p-12 p-t-4 ">
-                                    5 giờ trước
+                                <div class="post--text fs-p-14">
+                                    ${itemR.description}
+                                </div>
+                                <div class="text--time">
+                                    11 giờ trước
                                 </div>
                             </div>
                         </div>
+                        <div class="line-news m-y-16"></div>
                     `
-                $('.main-post-right').append(divR);
+                    $('.main-post-bottom').append(divBottom);
+                }
             }
-
         }
         showData();
 
