@@ -1,0 +1,9 @@
+.parent-hover{
+  position: relative;
+  .hover-img{
+    transition: all .3s ease;
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+}
