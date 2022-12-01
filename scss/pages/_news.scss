@@ -57,9 +57,22 @@ $arr: (8px, 12px, 14px, 16px, 18px, 20px, 24px, 28px, 32px);
   }
   &__main-img {
     max-width: 100%;
-    img {
-      border-radius: 8px;
-    }
+      color: #1e293b;
+      picture{
+        @include aspect-ratio(676,350,0);
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      img {
+        border-radius: 8px;
+      }
   }
   &-list {
     display: flex;
@@ -92,7 +105,7 @@ $arr: (8px, 12px, 14px, 16px, 18px, 20px, 24px, 28px, 32px);
     color: $gray-700;
   }
   &-item {
-    margin-top: 32px;
+    margin-top: 24px;
     display: flex;
     gap: 16px;
     img {
@@ -106,6 +119,9 @@ $arr: (8px, 12px, 14px, 16px, 18px, 20px, 24px, 28px, 32px);
   &--text {
     padding-top: 4px;
     color: $gray-700;
+  }
+  &__content{
+    flex: 1;
   }
   &-right {
     max-width: 376px;
