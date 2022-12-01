@@ -68,7 +68,8 @@ fetch(baseUrl)
                 }
                 else {
                     let divBottom = `
-                            <div class="post-item">
+                    <div class="line-news m-y-16"></div>
+                        <div class="post-item">
                             <div class="post--img">
                              <img src="${imgUrl}${itemR.image}" alt="">
                             </div>
@@ -84,7 +85,6 @@ fetch(baseUrl)
                                 </div>
                             </div>
                         </div>
-                        <div class="line-news m-y-16"></div>
                     `
                     $('.main-post-bottom').append(divBottom);
                 }
