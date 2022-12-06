@@ -32,12 +32,20 @@
         .col {
             padding: 0;
         }
+        @include respond-to("md") {
+          flex-direction: column;
+        }
     }
     .col-right {
         max-width: calc(100% - 526px);
         flex-basis: calc(100% - 526px);
         width: 100%;
         margin-left: 48px;
+        @include respond-to("md") {
+          max-width: 100%;
+          width: 100%;
+          margin: 0;
+        }
     }
     .col-left {
         flex: 1;
@@ -55,6 +63,11 @@
         line-height: 28px;
         color: #0a2c36;
         padding: 0;
+        @include respond-to("md") {
+          width: calc(100%);
+          font-size: 16px;
+          line-height: 19px;
+        }
     }
     .form-group {
         display: flex;
@@ -69,12 +82,21 @@
         border-radius: 12px;
         height: 64px;
         padding: 16px 10px 20px;
-
         font-weight: 300;
         font-size: 24px;
         line-height: 28px;
         text-align: justify;
         color: #4f4f4f;
+        @include respond-to("md") {
+          background: rgba(255, 255, 255, 0.7);
+          border: 1px solid #939CA3;
+          border-radius: 6px;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 16px;
+          height: 32px;
+          padding:8px 24px;
+        }
     }
     .form-textarea {
         width: 650px;
@@ -89,6 +111,13 @@
         text-align: justify;
         color: #4f4f4f;
         outline: none;
+        @include respond-to("md") {
+          max-height: 106px;
+          font-size: 14px;
+          padding:8px 24px;
+          line-height: 19px;
+          width: 100%;
+        }
     }
     .require {
         font-weight: 400;
@@ -97,8 +126,18 @@
         text-align: justify;
         color: #4f4f4f;
         margin-bottom: 16px;
+        @include respond-to("md") {
+          font-style: italic;
+          font-size: 16px;
+        }
     }
     .submit-form{
         text-align: center;
+        @include respond-to("md") {}
+    }
+    .input-hidden{
+      @include respond-to("md") {
+        display: none;
+      }
     }
 }
