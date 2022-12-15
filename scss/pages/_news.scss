@@ -57,28 +57,36 @@ $arr: (8px, 12px, 14px, 16px, 18px, 20px, 24px, 28px, 32px);
   }
   &__main-img {
     max-width: 100%;
-      color: #1e293b;
-      picture{
-        @include aspect-ratio(676,350,0);
-        img{
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-        }
-      }
+    color: #1e293b;
+    picture {
+      @include aspect-ratio(676, 350, 0);
       img {
-        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
       }
+    }
+    img {
+      border-radius: 8px;
+    }
   }
   &-list {
     display: flex;
     &--title {
       color: $gray-800;
       word-break: break-word;
+    }
+    @include respond-to("md") {
+      box-shadow: inset 0px 1px 0px #d8e0e8;
+      padding-top: 16px;
+      &:first-child{
+        box-shadow: none;
+        padding-top: 0px;
+      }
     }
     &--img {
       img {
@@ -120,7 +128,7 @@ $arr: (8px, 12px, 14px, 16px, 18px, 20px, 24px, 28px, 32px);
     padding-top: 4px;
     color: $gray-700;
   }
-  &__content{
+  &__content {
     flex: 1;
   }
   &-right {
@@ -138,8 +146,7 @@ $arr: (8px, 12px, 14px, 16px, 18px, 20px, 24px, 28px, 32px);
 }
 
 @media (max-width: 992px) {
-  .js-showmore{
-   
+  .js-showmore {
   }
   .btn-showmore {
     font-weight: 500;
